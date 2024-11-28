@@ -1,10 +1,21 @@
 
 import React, { useContext, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Login = ()  => {
   const [currentState, setCurrentState] = useState('Sign up');
+  const navigate = useNavigate(); 
+  
+  
   const onSubmitHandler = async (event) => {
+ 
    event.preventDefault();
+   try {
+    
+    navigate('/'); 
+  } catch (error) {
+    console.log(error);
+  }
   }
   return (
     <form onSubmit={onSubmitHandler} className='flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-5 text-gray-800'>
