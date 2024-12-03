@@ -3,6 +3,7 @@ import { assets } from '../assets/assets'
 import NewsletterBox from '../components/NewsletterBox'
 import Title from '../components/Title'
 
+
 const Contact = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const Contact = () => {
         <p className='text-gray-500'>Tel: (1222) 990-000-666-777 <br /> Email: admin@carpetshop.com</p>
         <p className='font-semibold text-xl text-gray-600'>Careers at Carpet Shop</p>
         <p className='text-gray-500'>Learn more about our teams and job openings.</p>
-        <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'>Explore Jobs</button>
+        <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'><a href="https://t.me/carpetshopp1">Explore jobs</a></button>
       </div>
      </div>
 

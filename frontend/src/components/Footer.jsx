@@ -1,5 +1,6 @@
 import React from 'react';
 import { assets } from '../assets/assets';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -15,10 +16,13 @@ const Footer = () => {
         <div>
           <p className='text-xl font-medium my-5'>COMPANY</p>
           <ul className='flex flex-col gap-1 text-gray-600'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Delivery</li>
-            <li>Privacy policy</li>
+
+            <Link to='/'><p>Home</p></Link>
+            <Link to='/collection'><p>Collections</p></Link>
+            <Link to='/about'><p>About</p></Link>
+            <Link to='/contact'><p>Contact</p></Link>
+              
+       
           </ul>
         </div>
         <div>
@@ -26,6 +30,12 @@ const Footer = () => {
           <ul className='flex flex-col gap-1 text-gray-600'>
             <li>+998-91-123-23-23</li>
             <li>carpetshopuz@gmail.com</li>
+          
+            <li> <div className=''>
+                <a href="https://t.me/carpetshopp1" target="_blank" rel="noopener noreferrer" className='text-gray-600 hover:text-gray-800'>
+                  <i className="fab fa-telegram"></i>Telegram
+                </a></div></li>
+          
           </ul>
         </div>
       </div>
